@@ -1,0 +1,32 @@
+.accordion-card {
+    width: auto;
+    border: double rgb(102, 144, 207);
+    background-color: white;
+}
+
+.accordion-header {
+    position: relative;
+    padding: 10px;
+    margin: 0;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    color: rgb(50, 90, 150);
+    transform: rotate(0deg);
+    transition:
+        transform 300ms,
+        color 300ms;
+}
+
+.accordion-content {
+    border-top: solid 1px rgb(102, 144, 207);
+    padding: 10px;
+    color: #3d3b3b;
+    margin: 0;
+}
+
+.accordion-card.open .accordion-header .icon {
+    transform: rotate(45deg);
+}
