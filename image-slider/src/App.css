@@ -1,0 +1,89 @@
+.container {
+    position: relative;
+    /* border: 1px solid; */
+    height: 480px;
+    width: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    position:absolute;
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    filter: drop-shadow(0px 0px 5px #555);
+}
+
+.arrow-left {
+    left: 1rem;
+}
+
+.arrow-right {
+    right: 1rem;
+}
+
+.hide-arrow {
+    display: none;
+}
+
+.arrow:hover {
+    filter: drop-shadow(5px 5px 10px rgb(68, 88, 109));
+}
+
+.current-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px #666;
+}
+
+.hide-image {
+    display: none;
+}
+
+button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background-color: #fff;
+    border: none;
+    outline: none;
+    /* Optional: Add a border */
+    display: flex;
+    /* Center the content inside the button */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for better appearance */
+}
+
+button:hover {
+    background-color: #c2bcbc;
+    /* Optional: Add a hover effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /* Optional: Enhance shadow on hover */
+}
+
+/* Add this for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    /* Position the buttons at the bottom of the slider */
+    width: 100%;
+    gap: 10px;
+    /* Add spacing between buttons */
+}
+
+.btn-active {
+    background-color: #7c7a7a;
+}
+
+.btn-active:hover {
+    background-color: #636060;
+    box-shadow: 0px 4px 8px rgba(15, 15, 15, 0.3);
+}
