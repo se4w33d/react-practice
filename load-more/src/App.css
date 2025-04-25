@@ -1,0 +1,29 @@
+.products-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+}
+
+.product {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 150px;
+    border: 1px solid;
+    text-align: center;
+    margin: 3px;
+}
+
+.btn-container {
+    display: grid;
+    place-items: center;
+    margin: 10px;
+}
+
+p {
+    margin: 2px;
+    font-size: 0.9rem;
+}
